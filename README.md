@@ -1,41 +1,45 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
-
 # Desafio Batalha Naval - Três Níveis de Complexidade
 
-Bem-vindo ao desafio "Batalha Naval"! Este projeto desafiará suas habilidades de programação utilizando vetores e matrizes para simular um jogo de Batalha Naval, dividido em três níveis: Novato, Aventureiro e Mestre. Em cada nível, novas funcionalidades serão adicionadas, tornando o desafio progressivamente mais complexo.
-
-## 🏅 Nível Novato
-
-Neste nível inicial, você implementará a lógica básica de posicionamento de navios em um tabuleiro de Batalha Naval utilizando vetores bidimensionais.
-
-### 🚩 Objetivos:
-- **Posicionamento dos Navios:** O sistema deve simular a localização de dois navios no tabuleiro, um posicionado verticalmente e outro horizontalmente.
-- **Utilização de Vetores:** Os navios serão posicionados utilizando vetores bidimensionais, com coordenadas X e Y.
-- **Exibição de Coordenadas:** O sistema deve exibir as coordenadas de cada parte dos navios no console utilizando `printf`.
-
-### 📥 Entrada de Dados:
-- Os valores serão inseridos manualmente por meio de variáveis no código.
-
-### 📤 Saída de Dados:
-- Após o posicionamento, o sistema deve exibir as coordenadas dos navios de forma clara e organizada.
+Este projeto explora três níveis de complexidade no jogo de Batalha Naval em C, focando em vetores e matrizes.
 
 ---
 
-## 🏅 Nível Aventureiro
+## Níveis
 
-No nível Aventureiro, você expandirá o tabuleiro e adicionará mais navios, incluindo posicionamentos na diagonal.
+1. **Novato**
+   - Tabuleiro 10×10 (iniciado com 0).
+   - Posiciona 2 navios (tamanho 3): um horizontal e outro vertical.
+   - Exibe coordenadas via `printf`.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Tabuleiro 10x10:** O tabuleiro será expandido para uma matriz 10x10.
-- **Posicionamento de Quatro Navios:** O sistema deverá posicionar quatro navios, incluindo dois na diagonal.
-- **Exibição Completa do Tabuleiro:** O sistema exibirá toda a matriz, onde 0 indica uma posição sem navio e 3 indica uma posição ocupada.
+2. **Aventureiro**
+   - Mesma matriz 10×10.
+   - Posiciona 4 navios (2 ortogonais + 2 diagonais).
+   - Exibe o tabuleiro completo com `0` (água) e `3` (navio).
 
-### 🚩 Novas Funcionalidades:
-- **Matriz 10x10:** Implementação de uma matriz maior para representar o tabuleiro.
-- **Posicionamento de Navios na Diagonal:** Adição de navios posicionados diagonalmente.
-- **Exibição do Tabuleiro Completo:** O sistema mostrará o tabuleiro completo, indicando as posições ocupadas e livres.
+3. **Mestre**
+   - Mantém os 4 navios do nível anterior.
+   - Implementa 3 habilidades (cone, cruz, octaedro) como matrizes 3×5.
+   - Sobrepõe efeitos: `1` para água afetada, `5` sobre navio.
+   - Usa loops aninhados e condicionais para posicionar áreas de efeito.
+   - Exibe tabuleiro rotulado (colunas A–J, linhas 1–10).
 
+---
+
+## Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Cursos-TI/desafio-batalha-naval-Davidcd1.git
+   cd desafio-batalha-naval-Davidcd1/
+   ```
+2. Compile:
+   ```bash
+   gcc batalhaNaval.c -o batalhaNaval
+   ```
+3. Execute:
+   ```bash
+   ./batalhaNaval
+   ```
 ---
 
 ## 🏅 Nível Mestre
@@ -79,10 +83,6 @@ printf("%d ",matriz[i][j]);
 1 1 1 1 1
 
 0 0 1 0 0
-
-
-
-
 
 ---
 
